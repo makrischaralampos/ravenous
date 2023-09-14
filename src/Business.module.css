@@ -1,0 +1,43 @@
+.business {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+  padding: 0.9375rem;
+  border: 0.0625rem solid #ccc;
+}
+
+.imageContainer {
+  width: 40%;
+}
+
+.imageContainer img {
+  width: 100%;
+}
+
+.business h2 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.businessInformation {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.businessAddress p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.businessReviews h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.rating {
+  color: #e7711b;
+}
