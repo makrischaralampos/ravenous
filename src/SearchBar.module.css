@@ -1,39 +1,66 @@
 .searchBar {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 1.25rem;
-  background-color: #f8f8f8;
-  border: 0.0625rem solid #ccc;
-  border-radius: 0.3125rem;
-  box-shadow: 0rem 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+.searchBarSortOptions {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .searchBarSortOptions ul {
   list-style: none;
   padding: 0;
-  margin: 0;
   display: flex;
 }
 
 .searchBarSortOptions li {
-  margin-right: 0.625rem;
+  margin: 0 10px;
   cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.searchBarSortOptions li:hover {
+  background-color: #f0f0f0;
+}
+
+.searchBarSortOptions li.active {
+  background-color: #0073bb;
+  color: white;
+}
+
+.searchBarFields {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
 .searchBarFields input {
-  width: 45%;
-  padding: 0.625rem;
-  border: 0.0625rem solid #ccc;
-  border-radius: 0.3125rem;
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.searchBarSubmit {
+  display: flex;
+  justify-content: center;
 }
 
 .searchBarSubmit button {
-  width: 10%;
-  padding: 0.625rem;
-  background-color: #e7711b;
+  padding: 10px 20px;
+  background-color: #0073bb;
   color: white;
   border: none;
-  border-radius: 0.3125rem;
+  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.searchBarSubmit button:hover {
+  background-color: #005f8a;
 }
