@@ -1,6 +1,6 @@
 import React from "react";
-import Business from "./Business";
 import styles from "./BusinessList.module.css";
+import Business from "./Business";
 
 function BusinessList({ businesses }) {
   return (

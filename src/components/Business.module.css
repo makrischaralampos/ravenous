@@ -1,0 +1,40 @@
+.business {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.business:hover {
+  transform: translateY(-5px);
+}
+
+.imageContainer {
+  width: auto;
+  height: 250px;
+  overflow: hidden;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.businessInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.businessAddress,
+.businessReviews {
+  text-align: center;
+}
+
+.rating {
+  font-weight: bold;
+}

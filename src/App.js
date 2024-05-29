@@ -1,38 +1,19 @@
-import React from "react";
-import BusinessList from "./BusinessList";
-import SearchBar from "./SearchBar";
+import React, { useState } from "react";
+import styles from "./App.module.css";
+import BusinessList from "./components/BusinessList";
+import SearchBar from "./components/SearchBar";
 
 function App() {
-  const businesses = [
-    {
-      id: 1,
-      imageSrc: "url-to-image1",
-      name: "Business 1",
-      address: "123 Main St",
-      city: "Cityville",
-      state: "CA",
-      zipCode: "12345",
-      category: "Restaurant",
-      rating: 4.5,
-      reviewCount: 100,
-    },
-    {
-      id: 2,
-      imageSrc: "url-to-image2",
-      name: "Business 2",
-      address: "456 Elm St",
-      city: "Townsville",
-      state: "NY",
-      zipCode: "54321",
-      category: "Cuisine",
-      rating: 4.0,
-      reviewCount: 50,
-    },
-  ];
+  const [businesses, setBusinesses] = useState([]);
+
+  const searchYelp = (searchResults) => {
+    setBusinesses(searchResults);
+  };
 
   return (
-    <div className="App">
-      <SearchBar />
+    <div className={styles.container}>
+      <h1 className={styles.header}>Ravenous</h1>
+      <SearchBar onSearch={searchYelp} />
       <BusinessList businesses={businesses} />
     </div>
   );

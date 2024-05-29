@@ -2,9 +2,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
 .searchBarSortOptions {
+  list-style: none;
+  padding: 0;
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -12,25 +20,19 @@
 
 .searchBarSortOptions ul {
   list-style: none;
-  padding: 0;
   display: flex;
+  padding: 0;
 }
 
 .searchBarSortOptions li {
   margin: 0 10px;
   cursor: pointer;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
 }
 
-.searchBarSortOptions li:hover {
-  background-color: #f0f0f0;
-}
-
-.searchBarSortOptions li.active {
-  background-color: #0073bb;
-  color: white;
+.searchBarSortOptions .active {
+  font-weight: bold;
+  text-decoration: underline;
+  color: var(--primary-color);
 }
 
 .searchBarFields {
@@ -41,26 +43,28 @@
 
 .searchBarFields input {
   margin: 0 10px;
-  padding: 10px;
+  padding: 12px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  width: 200px;
 }
 
 .searchBarSubmit {
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
 
 .searchBarSubmit button {
-  padding: 10px 20px;
-  background-color: #0073bb;
-  color: white;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .searchBarSubmit button:hover {
-  background-color: #005f8a;
+  background-color: #ff3a3f;
 }
