@@ -30,7 +30,7 @@ The Ravenous project is a restaurant recommendation web application that allows 
 
 ## Getting Started
 
-1. Clone the repository: `git clone https://github.com/your-username/ravenous.git`
+1. Clone the repository: `git clone https://github.com/makrischaralampos/ravenous.git`
 2. Install dependencies: `npm install`
 3. Set up your Yelp API credentials as environment variables.
 4. Start the development server: `npm start`
